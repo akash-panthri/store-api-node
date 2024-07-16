@@ -15,6 +15,7 @@ app.get('/', (req, res)=>{
     
 })
 
+// app.use('/api/v1/products',)
 // Connect to Database
 connectDb()
 
