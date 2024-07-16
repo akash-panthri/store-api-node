@@ -5,7 +5,7 @@ const app = express()
 // async error
 const notFoundMiddleware = require('./middleware/not-found')
 const errorMiddleware = require('./middleware/error-handler')
-
+const connectDb = require('./db/connect')
 //middleware
 app.use(express.json())
 
@@ -14,6 +14,9 @@ app.get('/', (req, res)=>{
     res.send('<h1>Store API</h1><a href="/api/v1/products">Products route</a>')
     
 })
+
+// Connect to Database
+connectDb()
 
 const port = process.env.PORT || 5000
 // product route
