@@ -2,7 +2,7 @@
 
 
 
-In order to run the project, setup .env and set MONGO_CONNECTION_STRING variable equal to DB connection string and PORT variable equal to port value (port you want to run backend on) .
+In order to run the project, setup .env and set MONGO_URL variable equal to DB connection string and PORT variable equal to port value (port you want to run backend on) .
 
 
 Routes in backend are: 
